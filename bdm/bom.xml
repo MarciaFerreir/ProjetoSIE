@@ -41,8 +41,21 @@
                 <field type="STRING" length="255" name="titulo" nullable="true" collection="false"/>
                 <field type="LOCALDATETIME" length="255" name="dataProposta" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="cliente" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="responsavel" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="LAZY" name="cliente" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="responsavelTecnico" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Requesitos" fetchType="EAGER" name="requesitos" nullable="true" collection="true"/>
+                <field type="FLOAT" length="255" name="preco" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipoPorjeto" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="validarRequesitos" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Requesitos">
+            <fields>
+                <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="preco" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
