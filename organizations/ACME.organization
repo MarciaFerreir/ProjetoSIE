@@ -574,80 +574,28 @@
     </role>
   </roles>
   <groups>
-    <group name="acme">
-      <displayName>Acme</displayName>
-      <description>This group represents the acme department of the ACME organization</description>
-    </group>
-    <group name="hr" parentPath="/acme">
-      <displayName>Human Resources</displayName>
-      <description>This group represents the human resources department of the ACME organization</description>
-    </group>
-    <group name="finance" parentPath="/acme">
-      <displayName>Finance</displayName>
-      <description>This group represents the finance department of the ACME organization</description>
-    </group>
-    <group name="it" parentPath="/acme">
-      <displayName>Infrastructure</displayName>
-      <description>This group represents the infrastructure department of the ACME organization</description>
-    </group>
-    <group name="marketing" parentPath="/acme">
-      <displayName>Marketing</displayName>
-      <description>This group represents the marketing department of the ACME organization</description>
-    </group>
-    <group name="production" parentPath="/acme">
-      <displayName>Production</displayName>
-      <description>This group represents the production department of the ACME organization</description>
-    </group>
-    <group name="sales" parentPath="/acme">
-      <displayName>Sales</displayName>
-      <description>This group represents the sales department of the ACME organization</description>
-    </group>
-    <group name="europe" parentPath="/acme/sales">
-      <displayName>Europe</displayName>
-      <description>This group represents the europe department of the ACME organization</description>
-    </group>
-    <group name="asia" parentPath="/acme/sales">
-      <displayName>Asia</displayName>
-      <description>This group represents the asia department of the ACME organization</description>
-    </group>
-    <group name="latin_america" parentPath="/acme/sales">
-      <displayName>Latin America</displayName>
-      <description>This group represents the latin america department of the ACME organization</description>
-    </group>
-    <group name="north_america" parentPath="/acme/sales">
-      <displayName>North America</displayName>
-      <description>This group represents the north america department of the ACME organization</description>
-    </group>
-    <group name="rd" parentPath="/acme/production">
-      <displayName>Research &amp; Development</displayName>
-      <description>This group represents the research &amp; development department of the ACME organization</description>
-    </group>
-    <group name="services" parentPath="/acme/production">
-      <displayName>Services</displayName>
-      <description>This group represents the services department of the ACME organization</description>
-    </group>
-    <group name="Group1">
+    <group name="Empresa">
       <displayName>Empresa</displayName>
     </group>
-    <group name="Group2" parentPath="/Group1/Comercial">
+    <group name="Group2" parentPath="/Empresa/Comercial">
       <displayName>Comercial</displayName>
     </group>
-    <group name="Comercial" parentPath="/Group1">
+    <group name="Comercial" parentPath="/Empresa">
       <displayName>Comercial</displayName>
     </group>
-    <group name="Pre Venda" parentPath="/Group1">
+    <group name="Pre Venda" parentPath="/Empresa">
       <displayName>Pre venda</displayName>
     </group>
-    <group name="Equipa de Suporte" parentPath="/Group1">
+    <group name="Equipa de Suporte" parentPath="/Empresa">
       <displayName>Equipa de Suporte</displayName>
     </group>
-    <group name="Equipa de Projeto" parentPath="/Group1">
+    <group name="Equipa de Projeto" parentPath="/Empresa">
       <displayName>Equipa de projeto</displayName>
     </group>
-    <group name="Equipa Tecnica" parentPath="/Group1">
+    <group name="Equipa Tecnica" parentPath="/Empresa">
       <displayName>Equipa Tecnica</displayName>
     </group>
-    <group name="Contablidade e Finanças" parentPath="/Group1">
+    <group name="Contablidade e Finanças" parentPath="/Empresa">
       <displayName>contablidade e Finanças</displayName>
     </group>
   </groups>
@@ -655,132 +603,90 @@
     <membership>
       <userName>william.jobs</userName>
       <roleName>member</roleName>
-      <groupName>acme</groupName>
     </membership>
     <membership>
       <userName>april.sanchez</userName>
       <roleName>member</roleName>
-      <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>helen.kelly</userName>
       <roleName>member</roleName>
-      <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>walter.bates</userName>
       <roleName>member</roleName>
-      <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>zachary.williamson</userName>
       <roleName>member</roleName>
-      <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>patrick.gardenier</userName>
       <roleName>member</roleName>
-      <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>virginie.jomphe</userName>
       <roleName>member</roleName>
-      <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>thorsten.hartmann</userName>
       <roleName>member</roleName>
-      <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>jan.fisher</userName>
       <roleName>member</roleName>
-      <groupName>it</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>isabel.bleasdale</userName>
       <roleName>member</roleName>
-      <groupName>marketing</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>favio.riviera</userName>
       <roleName>member</roleName>
-      <groupName>marketing</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>michael.morrison</userName>
       <roleName>member</roleName>
-      <groupName>production</groupName>
-      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>marc.marseau</userName>
       <roleName>member</roleName>
-      <groupName>rd</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
     </membership>
     <membership>
       <userName>joseph.hovell</userName>
       <roleName>member</roleName>
-      <groupName>rd</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
     </membership>
     <membership>
       <userName>mauro.zetticci</userName>
       <roleName>member</roleName>
-      <groupName>services</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
     </membership>
     <membership>
       <userName>thomas.wallis</userName>
       <roleName>member</roleName>
-      <groupName>services</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
     </membership>
     <membership>
       <userName>daniela.angelo</userName>
       <roleName>member</roleName>
-      <groupName>europe</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
     </membership>
     <membership>
       <userName>misa.kumagai</userName>
       <roleName>member</roleName>
-      <groupName>asia</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
     </membership>
     <membership>
       <userName>norio.yamazaki</userName>
       <roleName>member</roleName>
-      <groupName>asia</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
     </membership>
     <membership>
       <userName>giovanna.almeida</userName>
       <roleName>member</roleName>
-      <groupName>latin_america</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
     </membership>
     <membership>
       <userName>anthony.nichols</userName>
       <roleName>member</roleName>
-      <groupName>north_america</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
     </membership>
     <membership>
       <userName>comercial</userName>
       <roleName>member</roleName>
-      <groupName>acme</groupName>
     </membership>
     <membership>
       <userName>eprojeto</userName>
