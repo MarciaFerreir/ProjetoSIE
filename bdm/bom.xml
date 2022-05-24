@@ -57,6 +57,8 @@
                 <field type="STRING" length="255" name="tipoPorjeto" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="validarRequesitos" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.Produtos" fetchType="EAGER" name="produtos" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="condicaoPagamento" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Validacao" fetchType="EAGER" name="validacao" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -66,6 +68,16 @@
             <fields>
                 <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
                 <field type="FLOAT" length="255" name="preco" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Validacao">
+            <fields>
+                <field type="BOOLEAN" length="255" name="comercial" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="equipaSuporte" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="equipaProjeto" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

@@ -554,6 +554,18 @@
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
+    <user userName="eprojeto">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="gprojetoo">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -617,8 +629,26 @@
     <group name="Group1">
       <displayName>Empresa</displayName>
     </group>
-    <group name="Group2" parentPath="/Group1">
+    <group name="Group2" parentPath="/Group1/Comercial">
       <displayName>Comercial</displayName>
+    </group>
+    <group name="Comercial" parentPath="/Group1">
+      <displayName>Comercial</displayName>
+    </group>
+    <group name="Pre Venda" parentPath="/Group1">
+      <displayName>Pre venda</displayName>
+    </group>
+    <group name="Equipa de Suporte" parentPath="/Group1">
+      <displayName>Equipa de Suporte</displayName>
+    </group>
+    <group name="Equipa de Projeto" parentPath="/Group1">
+      <displayName>Equipa de projeto</displayName>
+    </group>
+    <group name="Equipa Tecnica" parentPath="/Group1">
+      <displayName>Equipa Tecnica</displayName>
+    </group>
+    <group name="Contablidade e Finanças" parentPath="/Group1">
+      <displayName>contablidade e Finanças</displayName>
     </group>
   </groups>
   <memberships>
@@ -751,6 +781,18 @@
       <userName>comercial</userName>
       <roleName>member</roleName>
       <groupName>acme</groupName>
+    </membership>
+    <membership>
+      <userName>eprojeto</userName>
+      <roleName>member</roleName>
+      <groupName>Equipa de Projeto</groupName>
+      <groupParentPath>/Group1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>gprojetoo</userName>
+      <roleName>member</roleName>
+      <groupName>Equipa de Projeto</groupName>
+      <groupParentPath>/Group1</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
