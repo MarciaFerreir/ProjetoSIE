@@ -16,6 +16,14 @@
             </queries>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.ClienteTeste">
+            <fields>
+                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.ExecucaoProjeto">
             <fields>
                 <field type="STRING" length="255" name="gestor" nullable="true" collection="false"/>
