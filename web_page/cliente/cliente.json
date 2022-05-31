@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "cliente",
   "name" : "cliente",
-  "lastUpdate" : 1653561053968,
+  "lastUpdate" : 1653564096338,
   "rows" : [
     [
       {
@@ -482,7 +482,8 @@
       "value" : [
         "[",
         "    {\"label\":\"Faturas\"},",
-        "    {\"label\":\"Produtos\"}",
+        "    {\"label\":\"Produtos\"},",
+        "    {\"label\":\"Proposta\"}",
         "]"
       ],
       "exposed" : false

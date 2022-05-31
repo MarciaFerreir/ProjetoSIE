@@ -19,6 +19,7 @@
         <businessObject qualifiedName="com.company.model.ClienteTeste">
             <fields>
                 <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="validar" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -88,6 +89,7 @@
                 <relationField type="COMPOSITION" reference="com.company.model.Produtos" fetchType="EAGER" name="produtos" nullable="true" collection="true"/>
                 <field type="STRING" length="255" name="condicaoPagamento" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.Validacao" fetchType="EAGER" name="validacao" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.ExecucaoProjeto" fetchType="EAGER" name="execucaoProjeto" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -97,6 +99,7 @@
             <fields>
                 <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
                 <field type="FLOAT" length="255" name="preco" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="feito" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
