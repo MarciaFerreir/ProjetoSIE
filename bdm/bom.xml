@@ -110,6 +110,7 @@
                 <field type="BOOLEAN" length="255" name="comercial" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="equipaSuporte" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="equipaProjeto" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="cliente" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
