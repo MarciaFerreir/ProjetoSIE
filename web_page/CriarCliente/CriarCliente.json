@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "CriarCliente",
   "name" : "CriarCliente",
-  "lastUpdate" : 1652011216073,
+  "lastUpdate" : 1654764182611,
   "rows" : [
     [
       {
@@ -39,7 +39,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
+                  "value" : "Contacto com o Cliente"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -254,6 +254,24 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "2aa0d7d3-f73f-4051-b0f4-19e1c10b9484",

@@ -46,6 +46,12 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="suporte">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -117,6 +123,12 @@
       <userName>Joaquim</userName>
       <roleName>member</roleName>
       <groupName>equipaRealizarProjeto</groupName>
+      <groupParentPath>/Empresa</groupParentPath>
+    </membership>
+    <membership>
+      <userName>suporte</userName>
+      <roleName>member</roleName>
+      <groupName>Equipa de Suporte</groupName>
       <groupParentPath>/Empresa</groupParentPath>
     </membership>
   </memberships>

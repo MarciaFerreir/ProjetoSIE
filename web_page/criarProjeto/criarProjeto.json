@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "criarProjeto",
   "name" : "criarProjeto",
-  "lastUpdate" : 1652800333572,
+  "lastUpdate" : 1654764209566,
   "rows" : [
     [
       {
@@ -39,7 +39,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
+                  "value" : "Criação de Projeto"
                 },
                 "alignment" : {
                   "type" : "constant",

@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ElaboracaoPropostaFinal",
   "name" : "ElaboracaoPropostaFinal",
-  "lastUpdate" : 1653404637773,
+  "lastUpdate" : 1654764688277,
   "rows" : [
     [
       {
@@ -39,7 +39,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
+                  "value" : "Elaboração Proposta Final"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -179,7 +179,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -226,7 +227,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Titulo"
+                          "value" : "Título"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -239,6 +240,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
                       "reference" : "63a98d04-b093-436e-9b7f-5d9cb7f134e2",
@@ -324,7 +337,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Descricao"
+                          "value" : "Descrição"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -337,6 +350,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
                       "reference" : "8a159629-c297-41db-8c93-3e9b95cbd7e2",
@@ -397,7 +422,8 @@
                       },
                       "propertyValues" : {
                         "repeatedCollection" : {
-                          "type" : "variable"
+                          "type" : "variable",
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
@@ -416,55 +442,6 @@
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!proposta_cliente.id"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Id"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{proposta_cliente.id}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "36196861-f020-4e21-a0d9-2daf6c82a2db",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ],
                         [
                           {
                             "type" : "component",
@@ -643,7 +620,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Responsavel Tecnico"
+                          "value" : "Responsável Técnico"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -656,6 +633,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
                       "reference" : "bb0f6941-033c-4a07-85f2-ae40aae41a72",
@@ -772,7 +761,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Descricao"
+                                "value" : "Descrição"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -792,6 +781,24 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "b92e776d-658c-4947-a2df-fa0fb9d49cff",
@@ -836,7 +843,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Preco"
+                                "value" : "Preço"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -856,6 +863,24 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "c42310bd-8b15-4a5f-a58e-7d09eceeb9b4",
@@ -1050,7 +1075,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Preco"
+                          "value" : "Preço"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1070,6 +1095,24 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "314b43ba-20eb-4af1-b320-cf0a134a3d20",
@@ -1106,7 +1149,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tipo Porjeto"
+                          "value" : "Tipo Projeto"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -1119,6 +1162,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
                       "reference" : "bc2a3e2a-de22-410e-a94d-71a32e513065",
@@ -1344,7 +1399,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Descricao"
+                                "value" : "Descrição"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -1364,6 +1419,24 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "78d20698-ae32-488a-b7a8-f369ef24f1d2",
@@ -1554,7 +1627,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Condicao Pagamento"
+                          "value" : "Condição de Pagamento"
                         },
                         "labelPosition" : {
                           "type" : "constant",
