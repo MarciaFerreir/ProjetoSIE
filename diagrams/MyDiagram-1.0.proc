@@ -214,14 +214,14 @@
             <messageContent xmi:type="expression:TableExpression" xmi:id="_oLJPRegKEey24oI33JbiYw">
               <expressions xmi:type="expression:ListExpression" xmi:id="_oLJPRugKEey24oI33JbiYw">
                 <expressions xmi:type="expression:Expression" xmi:id="_oLJPR-gKEey24oI33JbiYw" name="idProposta" content="idProposta" returnTypeFixed="true"/>
-                <expressions xmi:type="expression:Expression" xmi:id="_oLJPSOgKEey24oI33JbiYw" name="newScript()" content="projeto.persistenceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_T7oXEOgMEey24oI33JbiYw" name="projeto" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Projeto"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_oLJPSOgKEey24oI33JbiYw" name="idProjetoparaProposta()" content="projeto.persistenceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Cpt2cOgkEeyJ5NnGqJvLaQ" name="projeto" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Projeto"/>
                 </expressions>
               </expressions>
               <expressions xmi:type="expression:ListExpression" xmi:id="_c6k1wOgREey24oI33JbiYw">
                 <expressions xmi:type="expression:Expression" xmi:id="_c6k1wegREey24oI33JbiYw" name="standard" content="standard" returnTypeFixed="true"/>
-                <expressions xmi:type="expression:Expression" xmi:id="_c6k1wugREey24oI33JbiYw" name="newScript()" content="standard" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:Data" xmi:id="_DzfVMOgUEeyHW7vJvulyfg" name="standard" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_c6k1wugREey24oI33JbiYw" name="TipodeProjeto()" content="standard" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                  <referencedElements xmi:type="process:Data" xmi:id="_CpudgOgkEeyJ5NnGqJvLaQ" name="standard" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
                 </expressions>
               </expressions>
             </messageContent>
@@ -240,8 +240,8 @@
             <messageContent xmi:type="expression:TableExpression" xmi:id="_Ol5kVegTEey24oI33JbiYw">
               <expressions xmi:type="expression:ListExpression" xmi:id="_Ol5kVugTEey24oI33JbiYw">
                 <expressions xmi:type="expression:Expression" xmi:id="_Ol5kV-gTEey24oI33JbiYw" name="projeto" content="projeto" returnTypeFixed="true"/>
-                <expressions xmi:type="expression:Expression" xmi:id="_Ol5kWOgTEey24oI33JbiYw" name="newScript()" content="projeto.getPersistenceId()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_iFIc0OgWEeyJ5NnGqJvLaQ" name="projeto" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Projeto"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_Ol5kWOgTEey24oI33JbiYw" name="NecessidadesId()" content="projeto.getPersistenceId()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_NPxWgOghEeyJ5NnGqJvLaQ" name="projeto" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Projeto"/>
                 </expressions>
               </expressions>
             </messageContent>
@@ -264,7 +264,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_dV58UegQEey24oI33JbiYw" name="init_standard()" content="'standard'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_E__B88rmEeyeu6jnuUzSvA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_E6hfoOgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_np9VUOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_E__B9crmEeyeu6jnuUzSvA">
         <targetForm xmi:type="expression:Expression" xmi:id="_E__B9srmEeyeu6jnuUzSvA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -346,7 +346,7 @@
     </elements>
     <elements xmi:type="process:Pool" xmi:id="_alzSgNByEeyIT9Rh3OuTgA" name="Levantamento de Requisitos">
       <elements xmi:type="process:Lane" xmi:id="_bHMIUNByEeyIT9Rh3OuTgA" name="Pré-Venda" actor="_xs7m4NXoEeyeW96xeB1hiw">
-        <elements xmi:type="process:StartMessageEvent" xmi:id="_Jw-N8NBzEeyIT9Rh3OuTgA" name="Receber Necessidades do Cliente" outgoing="_u5U8YNYgEeydRPGiiCC8Rg" event="EnviarPedidoSuporte" incomingMessag="_ktBTgNXrEeyfpZi9CkqunQ">
+        <elements xmi:type="process:StartMessageEvent" xmi:id="_Jw-N8NBzEeyIT9Rh3OuTgA" name="Receber Necessidades do Cliente" outgoing="_u5U8YNYgEeydRPGiiCC8Rg" event="NecessidadesProjeto" incomingMessag="_ktBTgNXrEeyfpZi9CkqunQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Jw-N8tBzEeyIT9Rh3OuTgA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Jw-N8dBzEeyIT9Rh3OuTgA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Jw-N89BzEeyIT9Rh3OuTgA" name="" content="" returnTypeFixed="true"/>
@@ -605,7 +605,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_0VF3eNdSEeygaOswq4bfSw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_0VF3d9dSEeygaOswq4bfSw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_6p95atdTEeygaOswq4bfSw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Et2VkOgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_opGeIOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_6p95addTEeygaOswq4bfSw">
             <inputs xmi:type="process:ContractInput" xmi:id="_8bbP8NdTEeygaOswq4bfSw" name="ok" type="BOOLEAN">
@@ -781,14 +781,14 @@
             <messageContent xmi:type="expression:TableExpression" xmi:id="_LDnmRdtjEeyTo7bvjEEpBw">
               <expressions xmi:type="expression:ListExpression" xmi:id="_LDnmRttjEeyTo7bvjEEpBw">
                 <expressions xmi:type="expression:Expression" xmi:id="_LDnmR9tjEeyTo7bvjEEpBw" name="idProposta" content="idProposta" returnTypeFixed="true"/>
-                <expressions xmi:type="expression:Expression" xmi:id="_LDnmSNtjEeyTo7bvjEEpBw" name="newScript()" content="proposta.getPersistenceId()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XZQGMNtjEeyTo7bvjEEpBw" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_LDnmSNtjEeyTo7bvjEEpBw" name="PropostatecnicaId()" content="proposta.getPersistenceId()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_4tlPYOghEeyJ5NnGqJvLaQ" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
                 </expressions>
               </expressions>
               <expressions xmi:type="expression:ListExpression" xmi:id="_8ZU7oOgREey24oI33JbiYw">
                 <expressions xmi:type="expression:Expression" xmi:id="_8ZU7oegREey24oI33JbiYw" name="standard" content="standard" returnTypeFixed="true"/>
-                <expressions xmi:type="expression:Expression" xmi:id="_8ZU7ougREey24oI33JbiYw" name="newScript()" content="propostaProjeto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:Data" xmi:id="_8X8M0OgXEeyJ5NnGqJvLaQ" name="propostaProjeto" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_8ZU7ougREey24oI33JbiYw" name="PropostatecnicaTipo()" content="propostaProjeto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                  <referencedElements xmi:type="process:Data" xmi:id="_4tl2cOghEeyJ5NnGqJvLaQ" name="propostaProjeto" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
                 </expressions>
               </expressions>
             </messageContent>
@@ -949,7 +949,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_B3uTcegREey24oI33JbiYw" name="init_proposta()" content="'proposta'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_al1Hv9ByEeyIT9Rh3OuTgA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_Et2VkegdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_opGeIegsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_al1HwdByEeyIT9Rh3OuTgA">
         <targetForm xmi:type="expression:Expression" xmi:id="_al1HwtByEeyIT9Rh3OuTgA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1156,7 +1156,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_YkZQEdzWEeyMoo62J5cAsQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_juqQwNdSEeygaOswq4bfSw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_EY1u4OgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_oc1jwOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_juqQwtdSEeygaOswq4bfSw">
         <targetForm xmi:type="expression:Expression" xmi:id="_juqQw9dSEeygaOswq4bfSw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1265,11 +1265,11 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_vXtf4dtiEeyTo7bvjEEpBw" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_xJF98NtiEeyTo7bvjEEpBw" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_vXtf4ttiEeyTo7bvjEEpBw" name="newScript()" content="import java.lang.invoke.VarHandle&#xD;&#xA;&#xD;&#xA;//def requesitosVar = new com.company.model.Proposta().getPersistenceId(propostaDAO.findByPersistenceId(3))&#xD;&#xA;def requesitosVar = new com.company.model.Proposta()&#xD;&#xA;def proj = new com.company.model.Projeto()&#xD;&#xA;&#xD;&#xA;if(tipoProposta == &quot;proposta&quot;){&#xD;&#xA;&#x9;requesitosVar = propostaDAO.findByPersistenceId(idProp)&#xD;&#xA;}else if(tipoProposta == &quot;standard&quot;){&#xD;&#xA;&#x9;proj = projetoDAO.findByPersistenceId(idProp)&#xD;&#xA;&#x9;requesitosVar.cliente = proj.cliente&#xD;&#xA;&#x9;requesitosVar.descricao = &quot;Standart&quot;;&#xD;&#xA;&#x9;requesitosVar.tipoPorjeto = &quot;Standart&quot;;&#xD;&#xA;&#xD;&#xA;&#x9;def requesitosList = []&#xD;&#xA;&#x9;def req = new com.company.model.Requesitos()&#xD;&#xA;&#x9;req.descricao = &quot;cenas&quot;&#xD;&#xA;&#x9;requesitosList.add(req)&#xD;&#xA;&#xD;&#xA;&#x9;req = new com.company.model.Requesitos()&#xD;&#xA;&#x9;req.descricao = &quot;Bueda cenas&quot;&#xD;&#xA;&#x9;requesitosList.add(req)&#xD;&#xA;&#xD;&#xA;&#x9;req = new com.company.model.Requesitos()&#xD;&#xA;&#x9;req.descricao = &quot;Ca ganda cena o mano&quot;&#xD;&#xA;&#x9;requesitosList.add(req)&#xD;&#xA;&#xD;&#xA;&#x9;requesitosVar.requesitos = requesitosList&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return requesitosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Proposta">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_CRmH0OgYEeyJ5NnGqJvLaQ" name="propostaDAO" content="propostaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PropostaDAO" returnTypeFixed="true"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_CRmH0egYEeyJ5NnGqJvLaQ" name="tipoProposta" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_CRmH0ugYEeyJ5NnGqJvLaQ" name="projetoDAO" content="projetoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.ProjetoDAO" returnTypeFixed="true"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_CRmH0-gYEeyJ5NnGqJvLaQ" name="idProp" dataType="_E__CDcrmEeyeu6jnuUzSvA"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_vXtf4ttiEeyTo7bvjEEpBw" name="newScript()" content="import java.lang.invoke.VarHandle&#xD;&#xA;&#xD;&#xA;//def requesitosVar = new com.company.model.Proposta().getPersistenceId(propostaDAO.findByPersistenceId(3))&#xD;&#xA;def requesitosVar = new com.company.model.Proposta()&#xD;&#xA;def proj = new com.company.model.Projeto()&#xD;&#xA;&#xD;&#xA;if(tipoProposta == &quot;proposta&quot;){&#xD;&#xA;&#x9;requesitosVar = propostaDAO.findByPersistenceId(idProp)&#xD;&#xA;}else if(tipoProposta == &quot;standard&quot;){&#xD;&#xA;&#x9;proj = projetoDAO.findByPersistenceId(idProp)&#xD;&#xA;&#x9;requesitosVar.cliente = proj.cliente&#xD;&#xA;&#x9;requesitosVar.descricao = &quot;Standard&quot;;&#xD;&#xA;&#x9;requesitosVar.tipoPorjeto = &quot;Projeto&quot;;&#xD;&#xA;&#xD;&#xA;&#x9;def requesitosList = []&#xD;&#xA;&#x9;def req = new com.company.model.Requesitos()&#xD;&#xA;&#x9;req.descricao = &quot;cenas&quot;&#xD;&#xA;&#x9;requesitosList.add(req)&#xD;&#xA;&#xD;&#xA;&#x9;req = new com.company.model.Requesitos()&#xD;&#xA;&#x9;req.descricao = &quot;Bueda cenas&quot;&#xD;&#xA;&#x9;requesitosList.add(req)&#xD;&#xA;&#xD;&#xA;&#x9;req = new com.company.model.Requesitos()&#xD;&#xA;&#x9;req.descricao = &quot;Ca ganda cena o mano&quot;&#xD;&#xA;&#x9;requesitosList.add(req)&#xD;&#xA;&#xD;&#xA;&#x9;requesitosVar.requesitos = requesitosList&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return requesitosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Proposta">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_2gkHwOgtEeyJ5NnGqJvLaQ" name="propostaDAO" content="propostaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PropostaDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_2gkHwegtEeyJ5NnGqJvLaQ" name="tipoProposta" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_2gkHwugtEeyJ5NnGqJvLaQ" name="projetoDAO" content="projetoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.ProjetoDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_2gkHw-gtEeyJ5NnGqJvLaQ" name="idProp" dataType="_E__CDcrmEeyeu6jnuUzSvA"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_vXtf49tiEeyTo7bvjEEpBw" type="ASSIGNMENT"/>
           </operations>
@@ -1575,8 +1575,8 @@
             <messageContent xmi:type="expression:TableExpression" xmi:id="_QkSuJeZnEeyAFrDHLAvP6g">
               <expressions xmi:type="expression:ListExpression" xmi:id="_QkSuJuZnEeyAFrDHLAvP6g">
                 <expressions xmi:type="expression:Expression" xmi:id="_QkSuJ-ZnEeyAFrDHLAvP6g" name="idPropostaSuporte" content="idPropostaSuporte" returnTypeFixed="true"/>
-                <expressions xmi:type="expression:Expression" xmi:id="_QkSuKOZnEeyAFrDHLAvP6g" name="PropostaEquipaSuporte" content="proposta.getPersistenceId()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_7ERMMOgcEeyJ5NnGqJvLaQ" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_QkSuKOZnEeyAFrDHLAvP6g" name="PropostaEquipaSuporte()" content="proposta.getPersistenceId()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wq3gsOgiEeyJ5NnGqJvLaQ" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
                 </expressions>
               </expressions>
             </messageContent>
@@ -1605,8 +1605,8 @@
             <messageContent xmi:type="expression:TableExpression" xmi:id="_eSJZxegeEeyJ5NnGqJvLaQ">
               <expressions xmi:type="expression:ListExpression" xmi:id="_eSJZxugeEeyJ5NnGqJvLaQ">
                 <expressions xmi:type="expression:Expression" xmi:id="_eSJZx-geEeyJ5NnGqJvLaQ" name="idPropostaProjeto" content="idPropostaProjeto" returnTypeFixed="true"/>
-                <expressions xmi:type="expression:Expression" xmi:id="_eSJZyOgeEeyJ5NnGqJvLaQ" name="newScript()" content="proposta.getPersistenceId()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eSJZyegeEeyJ5NnGqJvLaQ" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_eSJZyOgeEeyJ5NnGqJvLaQ" name="PropostaFinaId()" content="proposta.getPersistenceId()&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_LhdBQOgmEeyJ5NnGqJvLaQ" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
                 </expressions>
               </expressions>
             </messageContent>
@@ -1626,7 +1626,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_EKQhUegSEey24oI33JbiYw" name="" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_2jQ239dgEey05oWX-I6goQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_GJ2ZgOgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_oXS8cOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_2jQ24ddgEey05oWX-I6goQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_2jQ24tdgEey05oWX-I6goQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1758,20 +1758,20 @@
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_l0W-MN8vEeytCrG_yivUkg" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_kvhdEt8vEeytCrG_yivUkg" name="newScript()" content="propostaDAO.findByPersistenceId(idProposta)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Proposta">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_oEi4IN8vEeytCrG_yivUkg" name="propostaDAO" content="propostaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PropostaDAO" returnTypeFixed="true"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_oEi4Id8vEeytCrG_yivUkg" name="idProposta" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_p3HGMOgoEeyJ5NnGqJvLaQ" name="propostaDAO" content="propostaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PropostaDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_p3HGMegoEeyJ5NnGqJvLaQ" name="idProposta" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_kvhdE98vEeytCrG_yivUkg" type="ASSIGNMENT"/>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_qST9ANwKEeyx2viD_3OAew">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_qST9AdwKEeyx2viD_3OAew" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p-y-UN8vEeytCrG_yivUkg" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
+          <operations xmi:type="expression:Operation" xmi:id="_c_BkAOgpEeyJ5NnGqJvLaQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_c_BkAegpEeyJ5NnGqJvLaQ" name="exeProjeto" content="exeProjeto" type="TYPE_VARIABLE" returnType="com.company.model.ExecucaoProjeto">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fFF4oOgpEeyJ5NnGqJvLaQ" name="exeProjeto" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.ExecucaoProjeto"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_qST9AtwKEeyx2viD_3OAew" name="newScript()" content="def requesitosVar = new com.company.model.ExecucaoProjeto()&#xD;&#xA;&#xD;&#xA;Random rnd = new Random()&#xD;&#xA;int a = rnd.nextInt(tecnicos.size())&#xD;&#xA;requesitosVar.setGestor(tecnicos.get(a).toString())&#xD;&#xA; &#xD;&#xA; return requesitosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.ExecucaoProjeto">
-              <referencedElements xmi:type="process:Data" xmi:id="_fqSKMODzEeySefHkHHnvYw" name="tecnicos" multiple="true" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_c_BkAugpEeyJ5NnGqJvLaQ" name="newScript()" content="Random rnd = new Random()&#xD;&#xA;int a = rnd.nextInt(tecnicos.size())&#xD;&#xA;&#xD;&#xA;return tecnicos.get(a).toString()&#xD;&#xA; &#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:Data" xmi:id="_vjEG8OgpEeyJ5NnGqJvLaQ" name="tecnicos" multiple="true" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_qST9A9wKEeyx2viD_3OAew" type="JAVA_METHOD" expression="setExecucaoProjeto">
-              <inputTypes>com.company.model.ExecucaoProjeto</inputTypes>
+            <operator xmi:type="expression:Operator" xmi:id="_c_BkA-gpEeyJ5NnGqJvLaQ" type="JAVA_METHOD" expression="setGestor">
+              <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_u__TtNtzEeyTo7bvjEEpBw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -1865,9 +1865,9 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_E_2Z0dwPEeyx2viD_3OAew" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_44e58N8wEeytCrG_yivUkg" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_E_2Z0twPEeyx2viD_3OAew" name="newScript()" content="def list = []&#xD;&#xA;&#xD;&#xA;Random rnd = new Random()&#xD;&#xA;int a = rnd.nextInt(tecnicos.size())&#xD;&#xA;list.add(tecnicos.get(a).toString())&#xD;&#xA;a = rnd.nextInt(tecnicos.size())&#xD;&#xA;list.add(tecnicos.get(a).toString())&#xD;&#xA;&#xD;&#xA;def prop = proposta.execucaoProjeto&#xD;&#xA;&#xD;&#xA;prop.equipa = list&#xD;&#xA;&#xD;&#xA;return prop&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.ExecucaoProjeto">
-              <referencedElements xmi:type="process:Data" xmi:id="_opZaQODzEeySefHkHHnvYw" name="tecnicos" multiple="true" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_opZaQeDzEeySefHkHHnvYw" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_E_2Z0twPEeyx2viD_3OAew" name="newScript()" content="def list = []&#xD;&#xA;&#xD;&#xA;Random rnd = new Random()&#xD;&#xA;int a = rnd.nextInt(tecnicos.size())&#xD;&#xA;list.add(tecnicos.get(a).toString())&#xD;&#xA;a = rnd.nextInt(tecnicos.size())&#xD;&#xA;list.add(tecnicos.get(a).toString())&#xD;&#xA;&#xD;&#xA;def exe = exeProjeto&#xD;&#xA;&#xD;&#xA;exe.equipa = list&#xD;&#xA;&#xD;&#xA;return exe&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.ExecucaoProjeto">
+              <referencedElements xmi:type="process:Data" xmi:id="_6PyIUOgpEeyJ5NnGqJvLaQ" name="tecnicos" multiple="true" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6PyIUegpEeyJ5NnGqJvLaQ" name="exeProjeto" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.ExecucaoProjeto"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_E_2Z09wPEeyx2viD_3OAew" type="JAVA_METHOD" expression="setExecucaoProjeto">
               <inputTypes>com.company.model.ExecucaoProjeto</inputTypes>
@@ -1941,12 +1941,12 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_t0nFsttzEeyTo7bvjEEpBw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_t0nFsdtzEeyTo7bvjEEpBw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_t0nFs9tzEeyTo7bvjEEpBw" name="" content="" returnTypeFixed="true"/>
-          <messageContent xmi:type="expression:Operation" xmi:id="_v_DKYNzbEeyMoo62J5cAsQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_v_DKYdzbEeyMoo62J5cAsQ" name="idProposta" content="idProposta" type="TYPE_VARIABLE" returnType="java.lang.Long">
-              <referencedElements xmi:type="process:Data" xmi:id="_yhVg8NzbEeyMoo62J5cAsQ" name="idProposta" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
+          <messageContent xmi:type="expression:Operation" xmi:id="_Y-umEOgjEeyJ5NnGqJvLaQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Y-umEegjEeyJ5NnGqJvLaQ" name="idProposta" content="idProposta" type="TYPE_VARIABLE" returnType="java.lang.Long">
+              <referencedElements xmi:type="process:Data" xmi:id="_ZvEd4OgjEeyJ5NnGqJvLaQ" name="idProposta" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_v_DKYtzbEeyMoo62J5cAsQ" name="idValue" content="idValue" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_v_DKY9zbEeyMoo62J5cAsQ" type="ASSIGNMENT"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Y-umEugjEeyJ5NnGqJvLaQ" name="idPropostaProjeto" content="idPropostaProjeto" type="MESSAGE_ID_TYPE" returnType="java.lang.Long"/>
+            <operator xmi:type="expression:Operator" xmi:id="_Y-umE-gjEeyJ5NnGqJvLaQ" type="ASSIGNMENT"/>
           </messageContent>
         </elements>
         <elements xmi:type="process:CallActivity" xmi:id="_2017cOKXEeyE64kj_8oVQA" name="Faturação Final" outgoing="_0vmtQOKXEeyE64kj_8oVQA" incoming="_dOI_QNwOEeyx2viD_3OAew">
@@ -1993,8 +1993,8 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_OEdNIdt7EeyH1Mpn0mGkJg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <data xmi:type="process:Data" xmi:id="_6pkFQNt7EeyH1Mpn0mGkJg" name="groupid" dataType="_E__CDcrmEeyeu6jnuUzSvA">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_6pkFQdt7EeyH1Mpn0mGkJg" name="init_groupid()" content="import org.bonitasoft.engine.api.IdentityAPI&#xD;&#xA;import org.bonitasoft.engine.identity.User&#xD;&#xA;import org.bonitasoft.engine.search.SearchOptionsBuilder&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;final IdentityAPI identityAPI = apiAccessor.getIdentityAPI()&#xD;&#xA;final SearchOptionsBuilder builder = new SearchOptionsBuilder(0, 100)&#xD;&#xA;&#xD;&#xA;long groupID = identityAPI.getGroupByPath(&quot;/Empresa/Equipa Tecnica&quot;).getId()&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;return groupID" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_6pkFQtt7EeyH1Mpn0mGkJg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_6pkFQdt7EeyH1Mpn0mGkJg" name="init_groupid()" content="import org.bonitasoft.engine.api.IdentityAPI&#xD;&#xA;import org.bonitasoft.engine.identity.User&#xD;&#xA;import org.bonitasoft.engine.search.SearchOptionsBuilder&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;final IdentityAPI identityAPI = apiAccessor.getIdentityAPI()&#xD;&#xA;final SearchOptionsBuilder builder = new SearchOptionsBuilder(0, 100)&#xD;&#xA;&#xD;&#xA;long groupID = identityAPI.getGroupByPath(&quot;/Empresa/Equipa de Projeto&quot;).getId()&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;return groupID" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_CAqngOgmEeyJ5NnGqJvLaQ" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
         </defaultValue>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_oNDgsNwKEeyx2viD_3OAew" name="exeProjeto" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.ExecucaoProjeto">
@@ -2012,7 +2012,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_PfYfAeJKEey-HOEoKqL9AQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_mU7oINtzEeyTo7bvjEEpBw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_ELHb8OgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_ngyyQOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_mU7oIttzEeyTo7bvjEEpBw">
         <targetForm xmi:type="expression:Expression" xmi:id="_mU7oI9tzEeyTo7bvjEEpBw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -2237,7 +2237,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_JC8dseJjEeyWMu8qyX-ymw" name="init_tipo()" content="'f'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_uNiGT9zXEeyMoo62J5cAsQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_F9DToOgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_oy8WoOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_uNiGUdzXEeyMoo62J5cAsQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_uNiGUtzXEeyMoo62J5cAsQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -2643,7 +2643,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_TTlnEeJjEeyWMu8qyX-ymw" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_1kQYz-JUEeyhGaKojgHMpA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_Fhq_MOgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_oCETUOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_1kQY0eJUEeyhGaKojgHMpA">
         <targetForm xmi:type="expression:Expression" xmi:id="_1kQY0uJUEeyhGaKojgHMpA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -2678,10 +2678,10 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_lBWKoOJVEeyhGaKojgHMpA" name="Projeto" target="_kgtiwOJVEeyhGaKojgHMpA" source="_EMibUOJWEeyUUOR3KJqJ4A">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_lBWKoeJVEeyhGaKojgHMpA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_lBWKouJVEeyhGaKojgHMpA" name="newScript()" content="&#xD;&#xA;if(tipo == &quot;p&quot;){&#xD;&#xA;&#x9;if(proposta.tipoPorjeto == &quot;Projeto&quot;){&#xD;&#xA;&#x9;&#x9;return true&#xD;&#xA;&#x9;}&#xD;&#xA;}else {&#xD;&#xA;&#x9;if(fatura.tipoProjeto == &quot;Projeto&quot;){&#xD;&#xA;&#x9;&#x9;return true&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;return false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9GtpgOKUEeyE64kj_8oVQA" name="fatura" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Fatura"/>
-          <referencedElements xmi:type="process:Data" xmi:id="_9GtpgeKUEeyE64kj_8oVQA" name="tipo" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9GtpguKUEeyE64kj_8oVQA" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
+        <condition xmi:type="expression:Expression" xmi:id="_lBWKouJVEeyhGaKojgHMpA" name="newScript()" content="if(tipo == 'p'){&#xD;&#xA;&#x9;if(proposta.tipoPorjeto == 'Projeto'){&#xD;&#xA;&#x9;&#x9;return true&#xD;&#xA;&#x9;}&#xD;&#xA;}else if(tipo == 'f'){&#xD;&#xA;&#x9;if(fatura.tipoProjeto == 'Projeto'){&#xD;&#xA;&#x9;&#x9;return true&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;return false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gGu_AOgtEeyJ5NnGqJvLaQ" name="fatura" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Fatura"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_gGu_AegtEeyJ5NnGqJvLaQ" name="tipo" dataType="_E__CEMrmEeyeu6jnuUzSvA"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gGvmEOgtEeyJ5NnGqJvLaQ" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_tTcuQOJWEeyUUOR3KJqJ4A" name="Proposta" target="_vJRAYOJWEeyUUOR3KJqJ4A" source="_kgtiwOJVEeyhGaKojgHMpA" isDefault="true">
@@ -2883,7 +2883,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_EnjWseZkEeyAFrDHLAvP6g" name="init_tipoProposta()" content="'s'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_S9sLT-ZjEeyAFrDHLAvP6g">
-        <targetForm xmi:type="expression:Expression" xmi:id="_FwAWIOgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_ot10MOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_S9sLUeZjEeyAFrDHLAvP6g">
         <targetForm xmi:type="expression:Expression" xmi:id="_S9sLUuZjEeyAFrDHLAvP6g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -3016,7 +3016,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_tKmZP-fFEeymYrQif42K9w">
-        <targetForm xmi:type="expression:Expression" xmi:id="_F1Ts4OgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_oPY9oOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_tKmZQefFEeymYrQif42K9w">
         <targetForm xmi:type="expression:Expression" xmi:id="_tKmZQufFEeymYrQif42K9w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -3218,7 +3218,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_QQUaP-fQEeymYrQif42K9w">
-        <targetForm xmi:type="expression:Expression" xmi:id="_FrIdMOgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_oKrcwOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_QQUaQefQEeymYrQif42K9w">
         <targetForm xmi:type="expression:Expression" xmi:id="_QQUaQufQEeymYrQif42K9w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -3371,12 +3371,12 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_9h_04egGEey24oI33JbiYw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_9h_04-gGEey24oI33JbiYw" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_z8wHAOgIEey24oI33JbiYw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_z8wHAegIEey24oI33JbiYw" name="idProjeto" content="idProjeto" type="TYPE_VARIABLE" returnType="java.lang.Long">
-              <referencedElements xmi:type="process:Data" xmi:id="_1Yr5gOgIEey24oI33JbiYw" name="idProjeto" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_z8wHAegIEey24oI33JbiYw" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_LlnWQOgrEeyJ5NnGqJvLaQ" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_z8wHAugIEey24oI33JbiYw" name="newScript()" content="def requesitosVar = new com.company.model.Proposta()&#xD;&#xA;&#xD;&#xA;if(idProjeto != null){&#xD;&#xA;&#x9;requesitosVar = propostaDAO.findByPersistenceId(idProjeto)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return requesitosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-              <referencedElements xmi:type="process:Data" xmi:id="_6Fyh0OgIEey24oI33JbiYw" name="idProjeto" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_6Fyh0egIEey24oI33JbiYw" name="propostaDAO" content="propostaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PropostaDAO" returnTypeFixed="true"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_z8wHAugIEey24oI33JbiYw" name="newScript()" content="def requesitosVar = new com.company.model.Proposta()&#xD;&#xA;&#xD;&#xA;if(idProjeto != null){&#xD;&#xA;&#x9;requesitosVar = propostaDAO.findByPersistenceId(idProjeto)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return requesitosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Proposta">
+              <referencedElements xmi:type="process:Data" xmi:id="_Y3s3YOgrEeyJ5NnGqJvLaQ" name="idProjeto" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Y3s3YegrEeyJ5NnGqJvLaQ" name="propostaDAO" content="propostaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PropostaDAO" returnTypeFixed="true"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_z8wHA-gIEey24oI33JbiYw" type="ASSIGNMENT"/>
           </operations>
@@ -3475,9 +3475,10 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_jaUaAegJEey24oI33JbiYw" name="avaliacao" content="avaliacao" type="TYPE_VARIABLE" returnType="com.company.model.Avaliacao">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_lrt04OgJEey24oI33JbiYw" name="avaliacao" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Avaliacao"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_jaUaAugJEey24oI33JbiYw" name="avalicaoDesempenho()" content="def var = new com.company.model.Avaliacao()&#xD;&#xA;&#xD;&#xA;var.comercial = projeto.responsavelTecnico&#xD;&#xA;var.projeto = projeto.responsavelTecnico&#xD;&#xA;var.proposta = propostaDAO.findByPersistenceId(idProjeto)&#xD;&#xA;&#xD;&#xA;int ndias = 0&#xD;&#xA;int ndesvios = 0&#xD;&#xA;int n = 0&#xD;&#xA;int d = 0&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;for(a in propostaDAO.findByPersistenceId(idProjeto).desvioOrcamento){&#xD;&#xA;    ndias = Integer.sum(a.NDias, n)&#xD;&#xA;    ndesvios = Integer.sum(1, n)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if(ndias &lt; 1){&#xD;&#xA;    n=5&#xD;&#xA;}else if(ndias &lt; 10){&#xD;&#xA;    n=4&#xD;&#xA;}else if(ndias &lt; 20){&#xD;&#xA;    n=3&#xD;&#xA;}else if(ndias &lt; 30){&#xD;&#xA;    n=2&#xD;&#xA;}else if(ndias &lt; 40){&#xD;&#xA;    n=1&#xD;&#xA;}else{&#xD;&#xA;    n=0&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if(ndesvios&lt;1){&#xD;&#xA;    d=5&#xD;&#xA;}else if(ndesvios &lt; 2){&#xD;&#xA;    d=4&#xD;&#xA;}else if(ndesvios &lt; 4){&#xD;&#xA;    d=3&#xD;&#xA;}else if(ndesvios &lt; 5){&#xD;&#xA;    d=2&#xD;&#xA;}else if(ndesvios &lt; 6){&#xD;&#xA;    d=1&#xD;&#xA;}else{&#xD;&#xA;    d=0&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;var.avaliacao = (n+d)/2&#xD;&#xA;&#xD;&#xA;return var" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Avaliacao">
-              <referencedElements xmi:type="process:Data" xmi:id="_qK-1gOgJEey24oI33JbiYw" name="idProjeto" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_qK-1gegJEey24oI33JbiYw" name="propostaDAO" content="propostaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PropostaDAO" returnTypeFixed="true"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_jaUaAugJEey24oI33JbiYw" name="avalicaoDesempenho()" content="def var = new com.company.model.Avaliacao()&#xD;&#xA;&#xD;&#xA;var.comercial = proposta.responsavelTecnico&#xD;&#xA;var.projeto = proposta.responsavelTecnico&#xD;&#xA;var.proposta = propostaDAO.findByPersistenceId(idProjeto)&#xD;&#xA;&#xD;&#xA;int ndias = 0&#xD;&#xA;int ndesvios = 0&#xD;&#xA;int n = 0&#xD;&#xA;int d = 0&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;for(a in propostaDAO.findByPersistenceId(idProjeto).desvioOrcamento){&#xD;&#xA;&#x9;ndias = Integer.sum(a.NDias, n)&#xD;&#xA;&#x9;ndesvios = Integer.sum(1, n)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if(ndias &lt; 1){&#xD;&#xA;&#x9;n=5&#xD;&#xA;}else if(ndias &lt; 10){&#xD;&#xA;&#x9;n=4&#xD;&#xA;}else if(ndias &lt; 20){&#xD;&#xA;&#x9;n=3&#xD;&#xA;}else if(ndias &lt; 30){&#xD;&#xA;&#x9;n=2&#xD;&#xA;}else if(ndias &lt; 40){&#xD;&#xA;&#x9;n=1&#xD;&#xA;}else{&#xD;&#xA;&#x9;n=0&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if(ndesvios&lt;1){&#xD;&#xA;&#x9;d=5&#xD;&#xA;}else if(ndesvios &lt; 2){&#xD;&#xA;&#x9;d=4&#xD;&#xA;}else if(ndesvios &lt; 4){&#xD;&#xA;&#x9;d=3&#xD;&#xA;}else if(ndesvios &lt; 5){&#xD;&#xA;&#x9;d=2&#xD;&#xA;}else if(ndesvios &lt; 6){&#xD;&#xA;&#x9;d=1&#xD;&#xA;}else{&#xD;&#xA;&#x9;d=0&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;var.avaliacao = (n+d)/2&#xD;&#xA;&#xD;&#xA;return var" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Avaliacao">
+              <referencedElements xmi:type="process:Data" xmi:id="_83aVEOgtEeyJ5NnGqJvLaQ" name="idProjeto" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_83aVEegtEeyJ5NnGqJvLaQ" name="propostaDAO" content="propostaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PropostaDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_83aVEugtEeyJ5NnGqJvLaQ" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_jaUaA-gJEey24oI33JbiYw" type="ASSIGNMENT"/>
           </operations>
@@ -3495,9 +3496,10 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_uZdoIegJEey24oI33JbiYw" name="premio" content="premio" type="TYPE_VARIABLE" returnType="com.company.model.Premio">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vCGVcOgJEey24oI33JbiYw" name="premio" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Premio"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_uZdoIugJEey24oI33JbiYw" name="atribuicaoPremio()" content="def var = new com.company.model.Premio()&#xD;&#xA;&#xD;&#xA;float taxa = 0.02&#xD;&#xA;&#xD;&#xA;var.comercial = projeto.responsavelTecnico&#xD;&#xA;var.proposta = propostaDAO.findByPersistenceId(idProjeto)&#xD;&#xA;var.premio = var.proposta.preco * taxa&#xD;&#xA;&#xD;&#xA;return var" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Premio">
-              <referencedElements xmi:type="process:Data" xmi:id="_zOKtQOgJEey24oI33JbiYw" name="idProjeto" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_zOKtQegJEey24oI33JbiYw" name="propostaDAO" content="propostaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PropostaDAO" returnTypeFixed="true"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_uZdoIugJEey24oI33JbiYw" name="atribuicaoPremio()" content="def var = new com.company.model.Premio()&#xD;&#xA;&#xD;&#xA;float taxa = 0.02&#xD;&#xA;&#xD;&#xA;var.comercial = proposta.responsavelTecnico&#xD;&#xA;var.proposta = propostaDAO.findByPersistenceId(idProjeto)&#xD;&#xA;var.premio = var.proposta.preco * taxa&#xD;&#xA;&#xD;&#xA;return var" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Premio">
+              <referencedElements xmi:type="process:Data" xmi:id="_-iNC8OgtEeyJ5NnGqJvLaQ" name="idProjeto" dataType="_E__CDsrmEeyeu6jnuUzSvA"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_-iNqAOgtEeyJ5NnGqJvLaQ" name="propostaDAO" content="propostaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PropostaDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-iNqAegtEeyJ5NnGqJvLaQ" name="proposta" dataType="_E__CE8rmEeyeu6jnuUzSvA" className="com.company.model.Proposta"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_uZdoI-gJEey24oI33JbiYw" type="ASSIGNMENT"/>
           </operations>
@@ -3521,7 +3523,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_w7DQkegIEey24oI33JbiYw" content="" returnType="java.lang.Long"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_2GP1D-gGEey24oI33JbiYw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_FJnEgOgdEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_nxSFUOgsEeyJ5NnGqJvLaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_2GP1EegGEey24oI33JbiYw">
         <targetForm xmi:type="expression:Expression" xmi:id="_2GP1EugGEey24oI33JbiYw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -3644,7 +3646,7 @@
       <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_UsRx-uJbEeyUUOR3KJqJ4A" id="GROOVY_SCRIPT"/>
       <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_UsRx--JbEeyUUOR3KJqJ4A" id="OTHER"/>
     </configurations>
-    <messageConnections xmi:type="process:MessageFlow" xmi:id="_ktBTgNXrEeyfpZi9CkqunQ" name="EnviarPedidoSuporte" target="_Jw-N8NBzEeyIT9Rh3OuTgA" source="_RSTD4MrtEeyR3OfPPRZ9kw"/>
+    <messageConnections xmi:type="process:MessageFlow" xmi:id="_ktBTgNXrEeyfpZi9CkqunQ" name="NecessidadesProjeto" target="_Jw-N8NBzEeyIT9Rh3OuTgA" source="_RSTD4MrtEeyR3OfPPRZ9kw"/>
     <messageConnections xmi:type="process:MessageFlow" xmi:id="_LDsewNtjEeyTo7bvjEEpBw" name="Pedido Proposta Standard" target="_AgJ9wNdhEey05oWX-I6goQ" source="_9I70ENtiEeyTo7bvjEEpBw"/>
     <messageConnections xmi:type="process:MessageFlow" xmi:id="_cZUQANzSEeyMoo62J5cAsQ" name="faturacao" target="_seC4INdREeygaOswq4bfSw" source="_CPm8MNzSEeyMoo62J5cAsQ"/>
     <messageConnections xmi:type="process:MessageFlow" xmi:id="_zS-5-dzTEeyMoo62J5cAsQ" name="pedido faturacao" target="_y7FQANwSEeyx2viD_3OAew" source="_7pDe8NzREeyMoo62J5cAsQ"/>
