@@ -143,7 +143,7 @@
                 <relationField type="COMPOSITION" reference="com.company.model.Validacao" fetchType="EAGER" name="validacao" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.ExecucaoSuporte" fetchType="EAGER" name="execucaoSuporte" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.company.model.ExecucaoProjeto" fetchType="LAZY" name="execucaoProjeto" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.ExecucaoProativa" fetchType="LAZY" name="execucaoProativa" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.ExecucaoProativa" fetchType="EAGER" name="execucaoProativa" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.DesvioOrcamento" fetchType="EAGER" name="desvioOrcamento" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
