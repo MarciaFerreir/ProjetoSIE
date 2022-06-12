@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "validacaoComercial",
   "name" : "validacaoComercial",
-  "lastUpdate" : 1653406331303,
+  "lastUpdate" : 1655065641023,
   "rows" : [
     [
       {
@@ -857,7 +857,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!proposta.preco"
+                          "value" : "!proposta.tipoPorjeto"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -865,11 +865,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Preco"
+                          "value" : "Tipo Porjeto"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{proposta.preco}}"
+                          "value" : "{{proposta.tipoPorjeto}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -878,9 +878,21 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
-                      "reference" : "272d9ae1-d866-4c53-9668-677b340e2c2e",
+                      "reference" : "30404adf-35e3-4828-b8c9-40e91803ef6f",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -906,7 +918,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!proposta.tipoPorjeto"
+                          "value" : "!proposta.preco"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -914,11 +926,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tipo Porjeto"
+                          "value" : "Preco"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{proposta.tipoPorjeto}}"
+                          "value" : "{{proposta.preco}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -929,7 +941,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "30404adf-35e3-4828-b8c9-40e91803ef6f",
+                      "reference" : "272d9ae1-d866-4c53-9668-677b340e2c2e",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""

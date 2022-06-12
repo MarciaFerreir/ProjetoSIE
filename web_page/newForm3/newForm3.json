@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "newForm3",
   "name" : "newForm3",
-  "lastUpdate" : 1654166606255,
+  "lastUpdate" : 1655065966224,
   "rows" : [
     [
       {
@@ -179,7 +179,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -902,7 +903,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!proposta.preco"
+                          "value" : "!proposta.tipoPorjeto"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -910,11 +911,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Preco"
+                          "value" : "Tipo Porjeto"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{proposta.preco}}"
+                          "value" : "{{proposta.tipoPorjeto}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -923,9 +924,21 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
-                      "reference" : "47e42b1d-c42b-4a1f-bd0b-b689f985078f",
+                      "reference" : "fc2939ae-48fe-4dbf-bc31-09877a923bbd",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -951,7 +964,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!proposta.tipoPorjeto"
+                          "value" : "!proposta.preco"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -959,11 +972,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tipo Porjeto"
+                          "value" : "Preco"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{proposta.tipoPorjeto}}"
+                          "value" : "{{proposta.preco}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -974,7 +987,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "fc2939ae-48fe-4dbf-bc31-09877a923bbd",
+                      "reference" : "47e42b1d-c42b-4a1f-bd0b-b689f985078f",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -1496,377 +1509,6 @@
                             "hasValidationError" : false,
                             "id" : "pbCheckbox",
                             "description" : ""
-                          }
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Execucao Projeto"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "7abec0b5-761b-461a-9793-c320db489121",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "container",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "repeatedCollection" : {
-                          "type" : "variable"
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "cb86df85-f258-47a0-8fcc-44b016a7ae24",
-                      "hasValidationError" : false,
-                      "id" : "pbContainer",
-                      "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!proposta.execucaoProjeto.gestor"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Gestor"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{proposta.execucaoProjeto.gestor}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "35f6cf42-3f3c-4327-a4f1-1a3f57494d5c",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "level" : {
-                                "type" : "constant",
-                                "value" : "Level 4"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "Equipa"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "f60ab26c-280d-493d-b55f-ae0ecc3499c8",
-                            "hasValidationError" : false,
-                            "id" : "pbTitle",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "container",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "repeatedCollection" : {
-                                "type" : "variable",
-                                "value" : "proposta.execucaoProjeto.equipa"
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "d149e983-2037-455b-9255-d720fa3343f7",
-                            "hasValidationError" : false,
-                            "id" : "pbContainer",
-                            "rows" : [
-                              [
-                                {
-                                  "type" : "component",
-                                  "dimension" : {
-                                    "md" : 12,
-                                    "sm" : 12,
-                                    "xs" : 12,
-                                    "lg" : 12
-                                  },
-                                  "propertyValues" : {
-                                    "allowHtml" : {
-                                      "type" : "constant",
-                                      "value" : true
-                                    },
-                                    "labelHidden" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "hidden" : {
-                                      "type" : "expression",
-                                      "value" : "!proposta.execucaoProjeto.equipa"
-                                    },
-                                    "cssClasses" : {
-                                      "type" : "constant",
-                                      "value" : ""
-                                    },
-                                    "label" : {
-                                      "type" : "interpolation",
-                                      "value" : "Equipa"
-                                    },
-                                    "text" : {
-                                      "type" : "interpolation",
-                                      "value" : "{{proposta.execucaoProjeto.equipa}}"
-                                    },
-                                    "alignment" : {
-                                      "type" : "constant",
-                                      "value" : "left"
-                                    },
-                                    "dimension" : {
-                                      "type" : "constant",
-                                      "value" : 12
-                                    }
-                                  },
-                                  "reference" : "97c353f6-7c73-4283-9a5f-6eb69d0eca46",
-                                  "hasValidationError" : false,
-                                  "id" : "pbText",
-                                  "description" : ""
-                                }
-                              ]
-                            ]
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "level" : {
-                                "type" : "constant",
-                                "value" : "Level 4"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "Tarefa Realizada"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "5a7f2939-e62a-4307-b7a0-f4d135f3ce7b",
-                            "hasValidationError" : false,
-                            "id" : "pbTitle",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "container",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "repeatedCollection" : {
-                                "type" : "variable",
-                                "value" : "proposta.execucaoProjeto.tarefaRealizada"
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "336e3817-52dd-473e-af1e-e7faecca930d",
-                            "hasValidationError" : false,
-                            "id" : "pbContainer",
-                            "rows" : [
-                              [
-                                {
-                                  "type" : "component",
-                                  "dimension" : {
-                                    "md" : 12,
-                                    "sm" : 12,
-                                    "xs" : 12,
-                                    "lg" : 12
-                                  },
-                                  "propertyValues" : {
-                                    "allowHtml" : {
-                                      "type" : "constant",
-                                      "value" : true
-                                    },
-                                    "labelHidden" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "hidden" : {
-                                      "type" : "expression",
-                                      "value" : "!proposta.execucaoProjeto.tarefaRealizada"
-                                    },
-                                    "cssClasses" : {
-                                      "type" : "constant",
-                                      "value" : ""
-                                    },
-                                    "label" : {
-                                      "type" : "interpolation",
-                                      "value" : "Tarefa Realizada"
-                                    },
-                                    "text" : {
-                                      "type" : "interpolation",
-                                      "value" : "{{proposta.execucaoProjeto.tarefaRealizada}}"
-                                    },
-                                    "alignment" : {
-                                      "type" : "constant",
-                                      "value" : "left"
-                                    },
-                                    "dimension" : {
-                                      "type" : "constant",
-                                      "value" : 12
-                                    }
-                                  },
-                                  "reference" : "2f956dde-fecf-40ce-9007-3493eaaa91d0",
-                                  "hasValidationError" : false,
-                                  "id" : "pbText",
-                                  "description" : ""
-                                }
-                              ]
-                            ]
                           }
                         ]
                       ]
