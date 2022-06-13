@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "elaboracaoPropostaFinal",
   "name" : "elaboracaoPropostaFinal",
-  "lastUpdate" : 1655130907829,
+  "lastUpdate" : 1655151027574,
   "rows" : [
     [
       {
@@ -1575,7 +1575,7 @@
                           "value" : "label"
                         },
                         "returnedKey" : {
-                          "type" : "expression",
+                          "type" : "constant",
                           "value" : "label"
                         },
                         "value" : {

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="projetoSIE" version="1.0" profile="User" homePage="dashboard" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Projeto SIE</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_Clientes" token="dashboard"/>
+            <applicationPage customPage="custompage_Faturas" token="faturas"/>
+            <applicationPage customPage="custompage_Premio" token="premio"/>
+            <applicationPage customPage="custompage_propostaSuporte" token="propostaSuporte"/>
+            <applicationPage customPage="custompage_PropostaProjeto" token="PropostaProjeto"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="dashboard">
+                <displayName>Clientes</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="faturas">
+                <displayName>Faturas</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="premio">
+                <displayName>Prémios</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="propostaSuporte">
+                <displayName>Proposta Suporte</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="PropostaProjeto">
+                <displayName>Proposta Projeto</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

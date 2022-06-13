@@ -155,7 +155,14 @@
                 <relationField type="AGGREGATION" reference="com.company.model.ValidacaoProativa" fetchType="LAZY" name="validacaoProativa" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="suporte" content="SELECT p.titulo, p.tipoProjeto, p.condicaoPagamento, p.departamento&#13;&#10;FROM Proposta p &#13;&#10;WHERE p.tipoProjeto = 'Suporte'" returnType="com.company.model.Proposta">
+                    <queryParameters/>
+                </query>
+                <query name="projeto" content="SELECT p&#13;&#10;FROM Proposta p &#13;&#10;WHERE p.tipoProjeto = 'Projeto'" returnType="com.company.model.Proposta">
+                    <queryParameters/>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.company.model.Requesitos">
