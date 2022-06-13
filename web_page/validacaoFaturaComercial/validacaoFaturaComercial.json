@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "validacaoFaturaComercial",
   "name" : "validacaoFaturaComercial",
-  "lastUpdate" : 1655127568805,
+  "lastUpdate" : 1655147725742,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "8de1f070-97cf-4658-a169-295f78e71678",
+        "reference" : "7fa1506d-3f9d-426b-abec-1043058776e1",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "5cb8e20a-d52d-4326-83d9-d7c79fafc4fc",
+              "reference" : "7e0aad92-4eca-4b3d-9e74-16b686b5a250",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "4e7cf578-76ef-4031-a01f-0147e46d6e9f",
+              "reference" : "c0ea097b-49a7-4dfa-9b36-328b11cc5084",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "8d6697f1-a7ac-491b-bd17-d6d761eca985",
+        "reference" : "444efd36-25d2-4218-8452-50c90ce5af77",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "b9ccc0d0-aed1-48e8-9fac-1b0d65fe7471",
+          "reference" : "147a87bc-48f7-4764-a4fa-16e41b31080a",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "39a0bbb8-2851-4d33-b5c3-353285741390",
+                "reference" : "241e7557-6547-4aad-bc02-de0391cbbc20",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -179,8 +179,7 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -195,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "19612bb0-44c2-4f44-a4dd-d4e636aa25dc",
+                "reference" : "c334d288-e62e-425e-a037-16cae66ebe23",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -209,177 +208,6 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!fatura.dataFatura"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Data Fatura"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{fatura.dataFatura|uiDate}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "91e54b7a-5fc8-4f97-bb3a-184e8ae9e85b",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!fatura.valor"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Valor"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{fatura.valor}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        }
-                      },
-                      "reference" : "72d1a498-c4d0-45f1-984b-ea052dcf883a",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!fatura.descricao"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Descrição"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{fatura.descricao}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        }
-                      },
-                      "reference" : "3fa723b7-b374-4b0c-9886-fd118ba972d6",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
@@ -394,7 +222,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Cliente"
+                          "value" : "Validacao"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -405,7 +233,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "a07d076a-1f90-47e5-ac8d-63bef82dcf2b",
+                      "reference" : "c289a52d-0d66-4cbf-8b21-a89270ee8672",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -422,8 +250,7 @@
                       },
                       "propertyValues" : {
                         "repeatedCollection" : {
-                          "type" : "variable",
-                          "value" : ""
+                          "type" : "variable"
                         },
                         "hidden" : {
                           "type" : "constant",
@@ -438,239 +265,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "45bac516-9486-44eb-8c4b-b65573e88ca6",
-                      "hasValidationError" : false,
-                      "id" : "pbContainer",
-                      "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 6,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 6
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!fatura_cliente.nome"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Nome"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{fatura_cliente.nome}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "a3e5fced-39c2-44bb-a5bd-01221fc40853",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          },
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 6,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 6
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!fatura_cliente.apelido"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Apelido"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{fatura_cliente.apelido}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : true
-                              }
-                            },
-                            "reference" : "ab6a9119-dfdb-48fe-bae5-0923f39078fd",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!fatura_cliente.empresa"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Empresa"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{fatura_cliente.empresa}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "ee723998-96cc-492a-9a07-a0c9f5776b1d",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Validação"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "d360c0f4-323c-4685-b3ca-fe14b596ab34",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "container",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "repeatedCollection" : {
-                          "type" : "variable",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "c8e97afd-2f21-4a77-b02c-f4d14a872ef8",
+                      "reference" : "cf7a4819-ae52-4185-922b-e1eccec050ee",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -713,7 +308,7 @@
                                 "value" : "fatura.validacao.comercial"
                               }
                             },
-                            "reference" : "a56a2894-7e44-4289-800e-60624a5c56ec",
+                            "reference" : "b54d14c0-8803-45ff-aa33-ea6c4ade0caa",
                             "hasValidationError" : false,
                             "id" : "pbCheckbox",
                             "description" : ""
@@ -796,7 +391,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "49a1b5b3-5ccb-49f1-afc8-429dbf773ba2",
+                "reference" : "7bca9864-ab7a-425c-a3df-71b8c42da09f",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -848,7 +443,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ad7cb7e1-4001-41e4-bfbc-54efaf638fc2",
+                "reference" : "0a892a15-cd2a-4c2d-b0e2-fdcfc486a56e",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -861,14 +456,14 @@
   ],
   "assets" : [
     {
-      "id" : "5961672a-859e-4352-be5a-f8af1d72f01a",
+      "id" : "c72194fd-a9b1-4c2a-bf46-cfbfe491e704",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "cb05e0f4-accd-4066-b146-64cb3166e8e2",
+      "id" : "b5b450c0-91a3-4eef-a112-99083f6eec38",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -881,13 +476,6 @@
       "type" : "url",
       "value" : [
         "../{{context.fatura_ref.link}}"
-      ],
-      "exposed" : false
-    },
-    "fatura_cliente" : {
-      "type" : "url",
-      "value" : [
-        "{{fatura|lazyRef:'cliente'}}"
       ],
       "exposed" : false
     },
@@ -916,9 +504,7 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.fatura && $data.fatura_cliente ){",
-        "\t//attach lazy references variables to parent variables",
-        "\t$data.fatura.cliente = $data.fatura_cliente;",
+        "if( $data.fatura ){",
         "\treturn {",
         "\t\t//map fatura variable to expected task contract input",
         "\t\tfaturaInput: {",
@@ -947,7 +533,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "00591142-bb4a-4698-aad3-88dc234c3ce3",
+  "uuid" : "29436628-a898-4c3b-ab2d-e6397146ef1b",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

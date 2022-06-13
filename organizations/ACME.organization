@@ -52,6 +52,31 @@
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
+    <user userName="Comercial2">
+      <firstName>Comercial2</firstName>
+      <lastName></lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Rita">
+      <firstName>Rita</firstName>
+      <lastName>Rita</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Prevenda">
+      <firstName>Prevenda</firstName>
+      <lastName></lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -129,6 +154,24 @@
       <userName>suporte</userName>
       <roleName>member</roleName>
       <groupName>Equipa de Suporte</groupName>
+      <groupParentPath>/Empresa</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Comercial2</userName>
+      <roleName>member</roleName>
+      <groupName>Comercial</groupName>
+      <groupParentPath>/Empresa</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Rita</userName>
+      <roleName>member</roleName>
+      <groupName>Contablidade e Finanças</groupName>
+      <groupParentPath>/Empresa</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Prevenda</userName>
+      <roleName>member</roleName>
+      <groupName>Pre Venda</groupName>
       <groupParentPath>/Empresa</groupParentPath>
     </membership>
   </memberships>
