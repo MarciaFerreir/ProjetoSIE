@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "criarProjeto",
   "name" : "criarProjeto",
-  "lastUpdate" : 1655059602068,
+  "lastUpdate" : 1655127034696,
   "rows" : [
     [
       {
@@ -374,7 +374,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Descricao"
+                                "value" : "Descrição"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -394,6 +394,24 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "339326c4-c1f1-4d79-8bec-24b5a36b9784",
@@ -683,7 +701,8 @@
                                 "value" : false
                               },
                               "displayedKey" : {
-                                "type" : "constant"
+                                "type" : "constant",
+                                "value" : "nome"
                               },
                               "returnedKey" : {
                                 "type" : "constant"
@@ -699,10 +718,10 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "md" : 12,
+                              "md" : 6,
                               "sm" : 12,
                               "xs" : 12,
-                              "lg" : 12
+                              "lg" : 6
                             },
                             "propertyValues" : {
                               "allowHtml" : {
@@ -742,16 +761,14 @@
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
-                          }
-                        ],
-                        [
+                          },
                           {
                             "type" : "component",
                             "dimension" : {
-                              "md" : 12,
+                              "md" : 6,
                               "sm" : 12,
                               "xs" : 12,
-                              "lg" : 12
+                              "lg" : 6
                             },
                             "propertyValues" : {
                               "allowHtml" : {
@@ -785,6 +802,18 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
                               }
                             },
                             "reference" : "189e9c0c-e13a-42c6-9f32-77e029642423",

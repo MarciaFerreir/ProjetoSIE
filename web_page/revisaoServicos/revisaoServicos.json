@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "revisaoServicos",
   "name" : "revisaoServicos",
-  "lastUpdate" : 1655118371052,
+  "lastUpdate" : 1655133510148,
   "rows" : [
     [
       {
@@ -227,7 +227,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Titulo"
+                          "value" : "Título"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -240,6 +240,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
                       "reference" : "f43a2b8d-b6e5-4f45-a67c-3979f966438d",
@@ -276,7 +288,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Descricao"
+                          "value" : "Descrição"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -289,6 +301,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
                       "reference" : "29e10bea-23ea-4d7f-b9c8-c5a948b93fba",
@@ -373,10 +397,10 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "md" : 12,
+                              "md" : 6,
                               "sm" : 12,
                               "xs" : 12,
-                              "lg" : 12
+                              "lg" : 6
                             },
                             "propertyValues" : {
                               "allowHtml" : {
@@ -416,16 +440,14 @@
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
-                          }
-                        ],
-                        [
+                          },
                           {
                             "type" : "component",
                             "dimension" : {
-                              "md" : 12,
+                              "md" : 6,
                               "sm" : 12,
                               "xs" : 12,
-                              "lg" : 12
+                              "lg" : 6
                             },
                             "propertyValues" : {
                               "allowHtml" : {
@@ -459,6 +481,18 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
                               }
                             },
                             "reference" : "9b11a20e-4a4c-4eb8-aaf5-c217e5220c03",
@@ -543,7 +577,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Requesitos"
+                          "value" : "Requisitos"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -619,7 +653,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Descricao"
+                                "value" : "Descrição"
                               },
                               "text" : {
                                 "type" : "interpolation",
@@ -632,6 +666,18 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
                               }
                             },
                             "reference" : "92d1ec22-f551-474c-83a7-71c22c97b8f3",
@@ -668,7 +714,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Preco"
+                                "value" : "Preço"
                               },
                               "text" : {
                                 "type" : "interpolation",
@@ -681,6 +727,18 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
                               }
                             },
                             "reference" : "783d6213-6cc0-4240-bc56-8498081d4731",

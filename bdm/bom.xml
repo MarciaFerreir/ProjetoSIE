@@ -111,6 +111,8 @@
             <fields>
                 <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="preco" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="faturado" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
